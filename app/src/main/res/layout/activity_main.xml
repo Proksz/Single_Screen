@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.example.android.singlescreen.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="250px"
+            android:layout_height="250px"
+            android:src="@drawable/logoclub" />
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/club_name"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_weight="1"
+        android:src="@drawable/tifoclub" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/Titles_Won"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/Titles" />
+
+        <TextView
+            android:id="@+id/ChampCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/Titles_Won"
+            android:padding="5dp"
+            android:text="@string/TitleCount"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Years"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ChampCounter"
+            android:padding="5dp"
+            android:text="@string/ChampionYrs" />
+
+        <TextView
+            android:id="@+id/Cups_Won"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Years"
+            android:padding="5dp"
+            android:text="@string/Cups" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Cups_Won"
+            android:padding="5dp"
+            android:text="@string/CupYears" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Years"
+            android:layout_toRightOf="@id/Cups_Won"
+            android:padding="5dp"
+            android:text="@string/CupCount"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="250dp"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/Years"
+            android:src="@drawable/jpl_trophy" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/buttonBackground"
+            android:onClick="onLocationButtonClicked"
+            android:text="@string/Location" />
+
+        <TextView
+            android:id="@+id/txtLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="10dp"
+            android:text="@string/Club_Details"
+            android:visibility="invisible" />
+    </LinearLayout>
+</LinearLayout>

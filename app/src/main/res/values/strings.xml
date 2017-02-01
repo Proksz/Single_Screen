@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">" FcBruges"</string>
+    <string name="club_name"> "Club Brugge K.V." </string>
+    <string name="Titles">"Titles won:"</string>
+    <string name="TitleCount">"14"</string>
+    <string name="ChampionYrs">"1919/20, 1972/73, 1975/76, 1976/77, 1977/78, 1979/80, 1987/88, 1989/90, 1991/92, 1995/96, 1997/98, 2002/03, 2004/05, 2015/16"</string>
+    <string name="Cups">"Cups won:" </string>
+    <string name="CupCount">"11"</string>
+    <string name="CupYears">"1967/68, 1969/70, 1976/77, 1985/86, 1990/91, 1994/95, 1995/96, 2001/02, 2003/04, 2006/07, 2014/15"</string>
+    <string name="Location">"Location"</string>
+    <string name="Club_Details">"Koning Leopold III-laan 50, 8200 Brugge"</string>
+</resources>
